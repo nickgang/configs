@@ -1,0 +1,53 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Nick Gang
+	email = nick.gang@shazam.com
+[core]
+  # excludesfile = /Users/nick.gang/.global_ignore
+  editor = vim
+  quotepath = false
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[log]
+  decorate = full
+  pretty = true
+[color]
+  ui = true
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow black
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red reverse
+  new = green reverse
+  whitespace = white reverse
+  ; commit =
+  ; func =
+  ; new =
+  ; old =
+  ; plain =
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan reverse
+  branch = magenta
+[alias]
+  st = status
+  s = status -s
+  ci = commit
+  l = log --graph
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate
+  ch = whatchanged --graph
+  wc = whatchanged --graph
+  wcc = whatchanged --graph --oneline
+  co = checkout
+  b = branch
+  ba = branch -a
+  d = diff
+  ds = diff --stat
+[push]
+  default = simple
